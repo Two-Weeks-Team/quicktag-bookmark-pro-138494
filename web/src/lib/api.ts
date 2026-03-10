@@ -1,5 +1,3 @@
-import { API } from 'next/dist/server/api-utils'
-
 export async function addBookmark(data: { url: string; title?: string; tags?: string[] }) {
   const res = await fetch('/api/bookmarks', {
     method: 'POST',
